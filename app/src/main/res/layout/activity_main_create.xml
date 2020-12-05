@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Buat Data dengan Menginputkanya"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/addimg"
+        android:layout_width="267dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="48dp"
+
+        android:src="@mipmap/ic_addphoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <EditText
+        android:id="@+id/create_nama2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nama"
+        app:layout_constraintEnd_toEndOf="@+id/addimg"
+        app:layout_constraintStart_toStartOf="@+id/addimg"
+        app:layout_constraintTop_toBottomOf="@+id/addimg" />
+
+    <EditText
+        android:id="@+id/create_bpom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Kode BPOM"
+        app:layout_constraintEnd_toEndOf="@+id/create_nama2"
+        app:layout_constraintStart_toStartOf="@+id/create_nama2"
+        app:layout_constraintTop_toBottomOf="@+id/create_nama2" />
+
+    <EditText
+        android:id="@+id/create_stok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Stok"
+        app:layout_constraintEnd_toEndOf="@+id/create_bpom"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/create_bpom"
+        app:layout_constraintTop_toBottomOf="@+id/create_bpom" />
+
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="CREATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/create_stok"
+        app:layout_constraintTop_toBottomOf="@+id/create_stok" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,17 +15,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Cosmetory"
+        android:text="Welcome to our simplest Cosmetic Inventory Management Cosmetory"
         android:textSize="30dp"
+        android:textAlignment="center"
         android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:onClick="btn_mainupdel"
-        android:text="Updel" />
 
     <Button
         android:id="@+id/button2"
@@ -38,17 +31,9 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:onClick="btn_katalog"
-        android:text="Lihat Katalog" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="read"
+        android:layout_marginTop="10dp"
         android:onClick="btn_read"
-        android:layout_marginTop="10dp"/>
-
+        android:text="LIHAT KATALOG" />
 
 
 </LinearLayout>

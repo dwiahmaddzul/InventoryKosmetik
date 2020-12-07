@@ -20,7 +20,6 @@
         </activity>
 
         <activity android:name="com.example.inventorykosmetik.MainUpdel"></activity>
-        <activity android:name="com.example.inventorykosmetik.Katalog"></activity>
         <activity android:name="com.example.inventorykosmetik.MainRead"></activity>
         <activity android:name="com.example.inventorykosmetik.MainCreate"></activity>
         <activity android:name="com.example.inventorykosmetik.MainActivity"></activity>

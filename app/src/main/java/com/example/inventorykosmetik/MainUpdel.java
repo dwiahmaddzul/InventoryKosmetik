@@ -67,18 +67,6 @@ public class MainUpdel extends AppCompatActivity {
             }
         });
 
-        Button btnplus = (Button) findViewById(R.id.btn_plus);
-        btnplus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String Sstok = String.valueOf(Estok.getText());
-                String Nilai = Sstok;
-                Integer Nilaibaru = Integer.parseInt(Nilai);
-                Nilaibaru =Nilaibaru+1;
-
-                Estok.setText(Nilaibaru);
-            }
-        });
 
 
     }

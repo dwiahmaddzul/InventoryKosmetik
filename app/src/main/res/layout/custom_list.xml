@@ -15,7 +15,7 @@
             android:id="@+id/iconid"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/ic_plant" />
+            android:src="@drawable/logoku" />
     </LinearLayout>
 
     <LinearLayout
@@ -56,15 +56,6 @@
             android:text="Stok"
             android:textColor="@color/black" />
 
-        <TextView
-            android:id="@+id/text_total"
-            android:layout_width="233dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/title"
-            android:layout_toEndOf="@+id/thumbnail_offline"
-            android:layout_toRightOf="@+id/thumbnail_offline"
-            android:text="Stok"
-            android:textColor="@color/black" />
     </LinearLayout>
 
 </LinearLayout>

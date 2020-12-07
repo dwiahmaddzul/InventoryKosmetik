@@ -38,7 +38,7 @@ public class MainRead extends AppCompatActivity implements
             judulModel.set_stok(cn.get_stok());
             listKosmetik.add(judulModel);
             if ((listKosmetik.isEmpty()))
-                Toast.makeText(com.example.inventorykosmetik.MainRead.this, "Tidak ada data",
+                Toast.makeText(com.example.inventorykosmetik.MainRead.this, "Tidak ada item",
                         Toast.LENGTH_SHORT).show();
             else {
             }
@@ -82,7 +82,7 @@ public class MainRead extends AppCompatActivity implements
             judulModel.set_stok(cn.get_stok());
             listKosmetik.add(judulModel);
             if ((listKosmetik.isEmpty()))
-                Toast.makeText(com.example.inventorykosmetik.MainRead.this, "Tidak ada data",
+                Toast.makeText(com.example.inventorykosmetik.MainRead.this, "Tidak ada item",
                         Toast.LENGTH_SHORT).show();
             else {
             }

@@ -43,13 +43,14 @@ public class CustomListAdapter extends BaseAdapter {
         TextView nama = (TextView) convertView.findViewById(R.id.text_nama);
         TextView bpom = (TextView) convertView.findViewById(R.id.text_bpom);
         TextView stok = (TextView) convertView.findViewById(R.id.text_stok);
-        TextView harga = (TextView) convertView.findViewById(R.id.text_total);
+        //TextView harga = (TextView) convertView.findViewById(R.id.text_total);
         Kosmetik m = movieItems.get(position);
         nama.setText("Nama : "+ m.get_nama());
-        bpom.setText("Spesies : "+ m.get_bpom());
-        stok.setText("stok : "+ m.get_stok());
-        Double Total = Double.parseDouble(m.get_stok())*20000;
-        harga.setText("Harga Total : "+ Double.toString(Total));
+        bpom.setText("BPOM : "+ m.get_bpom());
+        stok.setText("Stok : "+ m.get_stok());
+       // batalkan nampilin harga, bikin simple aja
+        // Double Total = Double.parseDouble(m.get_stok())*20000;
+        //harga.setText("Harga Total : "+ Double.toString(Total));
         return convertView;
     }
 }

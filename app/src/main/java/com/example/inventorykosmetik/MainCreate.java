@@ -53,11 +53,11 @@ public class MainCreate extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                 } else if (Sbpom.equals("")) {
                     Ebpom.requestFocus();
-                    Toast.makeText(com.example.inventorykosmetik.MainCreate.this, "Silahkan isi Nama Spesies",
+                    Toast.makeText(com.example.inventorykosmetik.MainCreate.this, "Silahkan isi Kode BPOM",
                             Toast.LENGTH_SHORT).show();
                 } else if (Sstok.equals("")) {
                     Ebpom.requestFocus();
-                    Toast.makeText(com.example.inventorykosmetik.MainCreate.this, "Silahkan isi stok",
+                    Toast.makeText(com.example.inventorykosmetik.MainCreate.this, "Silahkan isi Stok/Jumlah",
                             Toast.LENGTH_SHORT).show();
                 } else {
                     Enama.setText("");
@@ -65,7 +65,7 @@ public class MainCreate extends AppCompatActivity {
                     Toast.makeText(com.example.inventorykosmetik.MainCreate.this, "Data telah ditambah",
                             Toast.LENGTH_SHORT).show();
                     db.Createkosmetik(new Kosmetik(null, Snama, Sbpom, Sstok));
-                    Intent a = new Intent(com.example.inventorykosmetik.MainCreate.this, MainActivity.class);
+                    Intent a = new Intent(com.example.inventorykosmetik.MainCreate.this, MainRead.class);
                     startActivity(a);
                 }
             }

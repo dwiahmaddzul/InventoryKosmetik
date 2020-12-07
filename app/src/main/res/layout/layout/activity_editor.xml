@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the editor -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/verylg"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/large"
+    tools:context=".EditorActivity">
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/product_info" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/vvsmall">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_name"
+                android:inputType="textCapWords"
+                android:maxLength="20" />
+
+            <!-- Price field -->
+            <EditText
+                android:id="@+id/edit_price"
+                style="@style/EditorFieldStyle"
+                android:drawableStart="@drawable/price"
+                android:hint="@string/hint_price"
+                android:inputType="numberDecimal" />
+
+            <RelativeLayout
+                android:id="@+id/absoluteLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <!-- Quantity minus button field -->
+
+                <ImageButton
+                    android:id="@+id/minusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/white"
+                    android:clickable="true"
+                    android:contentDescription="@string/reduce_quantity_btn"
+                    android:src="@drawable/minus" />
+
+                <!-- Quantity field -->
+                <EditText
+                    android:id="@+id/edit_quantity"
+                    android:layout_width="@dimen/vvlarge"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/minusButton"
+                    android:gravity="center"
+                    android:hint="@string/hint_quantity"
+                    android:inputType="number" />
+
+                <!-- Quantity plus button field -->
+
+                <ImageButton
+                    android:id="@+id/plusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/edit_quantity"
+                    android:backgroundTint="@android:color/white"
+                    android:clickable="true"
+                    android:contentDescription="@string/increase_quantity_btn"
+                    android:focusable="false"
+                    android:src="@drawable/add"
+                    android:text="@string/click_call" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Supplier category -->
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/supplier_info" />
+
+        <!-- Input fields -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/large"
+            android:paddingStart="@dimen/vvsmall">
+
+            <EditText
+                android:id="@+id/edit_suppliername"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_supplier_name"
+                android:inputType="textCapWords"
+                android:maxLength="20" />
+
+            <!-- Supplier field -->
+            <EditText
+                android:id="@+id/edit_supplierphone"
+                style="@style/EditorFieldStyle"
+                android:layout_below="@+id/edit_suppliername"
+                android:hint="@string/hint_supplier_phone"
+                android:inputType="number"
+                android:maxLength="11" />
+
+
+            <ImageButton
+                android:id="@+id/phoneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_supplierphone"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/small"
+                android:background="@color/white"
+                android:clickable="true"
+                android:contentDescription="@string/oldphone"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/phone" />
+
+            <!-- Delete item button -->
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/small"
+                android:src="@drawable/cross"
+                app:backgroundTint="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
